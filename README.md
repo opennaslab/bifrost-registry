@@ -1,2 +1,2 @@
 # bifrost-registry
-Official bifrost action registry.
+Official bifrost steps registry.

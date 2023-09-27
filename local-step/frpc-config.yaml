@@ -1,0 +1,34 @@
+name: frpc-config
+description: install/config frpc in local host
+parameters:
+  in:
+  - name: server_addr
+    type: string
+    description: the frps server address
+    required: true
+  - name: server_port
+    type: int
+    description: the frps server port
+    required: true
+  - name: service
+    type: array
+    description: the list of local service
+    required: true
+    items:
+    - name: service_name
+      type: string
+      description: the service name
+      required: true
+    - name: local_ip
+      type: string
+      description: the local ip address
+      required: true
+    - name: local_port
+      type: int
+      description: the local port
+      required: true
+    - name: remote_port
+      type: int
+      description: the remote port
+      required: true
+image: opennaslab/frpc-config:latest
