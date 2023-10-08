@@ -1,4 +1,4 @@
-FROM opennaslab/bifrosr-base:latest
+FROM opennaslab/bifrost-registry-base:latest
 
 WORKDIR /root
 
